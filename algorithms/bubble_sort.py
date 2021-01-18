@@ -5,4 +5,3 @@ def bubble_sort(arr: list) -> list:
                 arr[i], arr[j] = arr[j], arr[i]
 
     return arr
-
