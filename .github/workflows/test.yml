@@ -23,7 +23,8 @@ jobs:
     - name: Test Algorithms
       run: |
         pytest --cov-report=xml
-  - name: Upload coverage to Codecov
+        mkdir coverage
+    - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
         files: coverage.xml
